@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  jminango-springboot-container:
+    image: jminango-spring-boot-docker-compose:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/jminango-springboot-container
+    ports:
+      - "8080:8080"
